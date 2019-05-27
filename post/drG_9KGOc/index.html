@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | Gridea</title>
+<title>pinglunceshi | Gridea</title>
 <meta name="description" content="道教思想安全人士blog">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,6 +12,12 @@
 <link rel="shortcut icon" href="https://dao81.github.io/favicon.ico?v=1558944982352">
 <link rel="stylesheet" href="https://dao81.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -90,40 +96,35 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
+          <div class="post-detail">
+            <h2 class="post-title">pinglunceshi</h2>
+            <div class="post-date">2019-05-27</div>
+            
+            <div class="post-content">
+              <p>dafdasfdasfadsfadsfsf</p>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
+            </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2019</h2>
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://dao81.github.io/post/EXbZEUs0y">
+                  <h3 class="post-title">
+                    评论测试
+                  </h3>
+                </a>
+              </div>
+            
+
+            
               
-                
-                  <article class="post">
-                    <a href="https://dao81.github.io/post/drG_9KGOc">
-                      <h2 class="post-title">
-                        pinglunceshi
-                      </h2>
-                    </a>
-                  </article>
-                
+                <div id="gitalk-container" data-aos="fade-in"></div>
               
-                
-                  <article class="post">
-                    <a href="https://dao81.github.io/post/EXbZEUs0y">
-                      <h2 class="post-title">
-                        评论测试
-                      </h2>
-                    </a>
-                  </article>
-                
+
               
             
+
           </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
 
         </div>
       </div>
@@ -145,6 +146,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '0540c9669531fcadf5be',
+        clientSecret: '2825abb5f32e41142d0c16cbc34545b8d0e1cde5',
+        repo: 'dao81',
+        owner: 'https://dao81.github.io',
+        admin: ['https://dao81.github.io'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

@@ -9,14 +9,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://dao81.github.io//favicon.ico?v=1558943486675">
-<link rel="stylesheet" href="https://dao81.github.io//styles/main.css">
+<link rel="shortcut icon" href="https://dao81.github.io/favicon.ico?v=1558944982352">
+<link rel="stylesheet" href="https://dao81.github.io/styles/main.css">
 
 
   
-
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
   
-    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+
   
 
 
@@ -34,8 +34,8 @@
       <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
-      <a class="site-title-container" href="https://dao81.github.io/">
-        <img src="https://dao81.github.io//images/avatar.png?v=1558943486675" class="site-logo">
+      <a class="site-title-container" href="https://dao81.github.io">
+        <img src="https://dao81.github.io/images/avatar.png?v=1558944982352" class="site-logo">
         <h1 class="site-title">Gridea</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -100,7 +100,7 @@
             <h2 class="post-title">Hello Gridea</h2>
             <div class="post-date">2018-12-12</div>
             
-              <div class="feature-container" style="background-image: url('https://dao81.github.io//post-images/hello-gridea.png')">
+              <div class="feature-container" style="background-image: url('https://dao81.github.io/post-images/hello-gridea.png')">
               </div>
             
             <div class="post-content">
@@ -130,7 +130,7 @@
             
               <div class="tag-container">
                 
-                  <a href="https://dao81.github.io//tag/gridea" class="tag">
+                  <a href="https://dao81.github.io/tag/gridea" class="tag">
                     Gridea
                   </a>
                 
@@ -140,9 +140,9 @@
 
             
               
-
+                <div id="gitalk-container" data-aos="fade-in"></div>
               
-                <div id="disqus_thread" data-aos="fade-in"></div>
+
               
             
 
@@ -172,21 +172,24 @@ var app = new Vue({
 
   
   
-
-  
-    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
 
-    var options = {
-      shortname: 'https-dao81-github-io',
-      apikey: 'p4fTb5U8cQ3cK8jd2MJLHhr4Ggtari5A6tdQVguuhlwjF96TtuN4aDy2F2IhCwqv',
-    }
-    if ('') {
-      options.api = ''
-    }
-    var dsqjs = new DisqusJS(options)
+      var gitalk = new Gitalk({
+        clientID: '0540c9669531fcadf5be',
+        clientSecret: '2825abb5f32e41142d0c16cbc34545b8d0e1cde5',
+        repo: 'dao81',
+        owner: 'https://dao81.github.io',
+        admin: ['https://dao81.github.io'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
   
 
 
