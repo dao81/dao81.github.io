@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>C:/Users/Administrator/Documents/Gridea/output</id>
+    <title>Gridea</title>
+    <updated>2019-05-27T02:55:41.708Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="C:/Users/Administrator/Documents/Gridea/output"/>
+    <link rel="self" href="C:/Users/Administrator/Documents/Gridea/output/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>C:/Users/Administrator/Documents/Gridea/output/images/avatar.png</logo>
+    <icon>C:/Users/Administrator/Documents/Gridea/output/favicon.ico</icon>
+    <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[我来测试一下这个是否是摘要内容，今天是2019年的5月23日，我们第一次使用Gridea这个静态blog软件程序<!-- more -->第一次的记录]]></title>
+        <id>C:/Users/Administrator/Documents/Gridea/output/post/diyi/index.html</id>
+        <link href="C:/Users/Administrator/Documents/Gridea/output/post/diyi/index.html">
+        </link>
+        <updated>2019-05-23T01:27:59.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>C:/Users/Administrator/Documents/Gridea/output/post/hello-gridea/index.html</id>
+        <link href="C:/Users/Administrator/Documents/Gridea/output/post/hello-gridea/index.html">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></content>
+    </entry>
+</feed>
